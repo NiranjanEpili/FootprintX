@@ -1,0 +1,28 @@
+# Environment files
+.env
+.env.production
+.env.*
+!.env.example
+
+# Credentials and secrets
+*.pem
+*.key
+credentials.json
+secrets.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+bot.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
