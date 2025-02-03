@@ -7,16 +7,16 @@ import nmap
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from email_validator import validate_email, EmailNotValidError
-from utils import *
+from bot.utils import *
 import io
 from datetime import datetime
-from report_generator import ReportGenerator
+from services.report_generator import ReportGenerator
 from telebot.types import InputFile, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 import logging
 import time
 import sys
 import os
-from config import BOT_TOKEN, DEBUG
+from config.config import BOT_TOKEN, DEBUG
 
 # Initialize bot with token from config
 bot = telebot.TeleBot(BOT_TOKEN)
